@@ -31,9 +31,9 @@ const Login = () => {
             {error ? <p className='p-3 bg-red-400 my-2'>{error}</p> : null}
             <form onSubmit={handleSubmit} className='w-full flex flex-col py-4'>
                 <input onChange={(e) => setEmail(e.target.value)} className='p-3 my-2 bg-gray-700 rounded-sm' type="email" placeholder='Email'
-                autoComplate="email" />
+                autocomplate="email" />
                 <input onChange={(e) => setPassword(e.target.value)} className='p-3 my-2 bg-gray-700 rounded-sm' type="password" placeholder='Password' 
-                  autoComplate="current-password"
+                  autocomplate="current-password"
                 />
 
                 <button  className='bg-red-600 py-3 my-6 rounded font-bold'>Sign In</button>
